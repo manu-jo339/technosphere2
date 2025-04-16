@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F2F4F7;
+    font-family: 'Yatra One', system-ui;
+}
+
+.logo h1 {
+    color: #F2F4F7;
+}
+.logo span {
+    color: #ff0000;
+}
+
+.title h1 {
+    font-size: 40px;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #ff0000;
+}
