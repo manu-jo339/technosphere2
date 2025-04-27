@@ -1,31 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
-
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+header {
+    background-color: #000000;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+.logo img {
+    width: 200px;
 }
 
-body {
-    background: #F2F4F7;
-    font-family: 'Yatra One', system-ui;
+.links {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+.nav-links ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.nav-links ul li{
+    list-style: none;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    padding: 10px;
+}
+.nav-links li a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    color: #1C1C1E;
 }
 
-.logo h1 {
-    color: #F2F4F7;
-}
-.logo span {
-    color: #ff0000;
-}
-
-.title h1 {
-    font-size: 40px;
+.contact-section {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: slideIn 1s ease-out;
 }
 
-.contact a {
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 32px;
+    animation: pop 1s ease-in-out;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.7); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.socials a {
     text-decoration: none;
 }
 
-.contact a:hover {
-    color: #ff0000;
+.socials img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.socials img:hover {
+    transform: scale(1.1) rotate(10deg);
+    opacity: 0.8;
 }

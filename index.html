@@ -1,133 +1,144 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechnoSphere</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-<header class="bg-dark text-white py-3 px-4 d-flex justify-content-between align-items-center">
-    <div class="logo">
-        <h1>Techno<span>Sphere</span></h1>
-    </div>
-    <nav class="navbar">
-        <ul class="d-flex list-unstyled gap-4 mb-0">
-            <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
-            <li><a href="service.html" class="text-white text-decoration-none">Services</a></li>
-            <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
-            <li><a href="propos.html" class="text-white text-decoration-none">À Propos</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    <section id="accueil" class="container my-5">
-        <div class="row align-items-center">
-            <div class="col-md-6 text-center text-md-start">
-                <h1>Bienvenue sur Techno<span>Sphere</span></h1>
-                <p>Nous vous proposons une large gamme de produits high-tech et de nombreux services dans le domaine des nouvelles technologies.</p>
-            </div>
-            <div class="col-md-6 text-center">
-                <img src="pc.png" class="img-fluid rounded-circle p-3 bg-white" alt="">
-            </div>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+    </header>
+    <section class="links" id="links">
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="info.html">À Propos</a></li>
+            </ul>
         </div>
     </section>
 
-    <section id="info" class="bg-white py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center">
-                <img src="support-informatique.png" class="img-fluid" alt="">
+    <div class="parallax" id="section-accueil">
+        <div class="hero">
+            <div class="overlay">
+                <div class="content">
+                    <h1 id="intro-text">Bienvenue Chez <span>TechnoSphere</span></h1>
                 </div>
-                <div class="col-md-6 text-center">
-                <p><strong>TechnoSphere</strong> est votre expert local en services informatique. Nous somme une entreprise locale basée sur la fourniture du matériel informatique et bien d'autres sevices du domaines de la technologie et de l'informatique.</p>
-                </div>
+                <p>Plongez dans un univers de technologie de haut <br> qualité et des meilleurs services informatiques <br> chez <span>TechnoSphere</span></p>
+            </div>
+        </div>
+    </div>
+
+    <section class="entreprise-section">
+        <div class="contenu">
+            <div class="texte">
+                <h2>Qui sommes-nous ?</h2>
+                <h3>TechnoSphere - Ton allié Tech du coin</h3>
+                <p>Chez <strong>TechnoSphere</strong>, on est des passionnés de tech qui veulent te faciliter la vie ! Réparation rapide, vente de matos high-tech, conseils personnalisés... bref, on gère tout.</p>
+                <p>Notre équipe ? Des geeks trop motivés qui te donnent accès aux dernières innovations sans prise de tête.</p>
+                <p>Un souci tech ? Un nouveau jouet à shopper ? <strong>On est là pour toi !</strong></p>
+                <a href="service.html" class="btn-decouvrir">Visitez notre site</a>
+            </div>
+            <div class="image">
+            <img src="logo2.png" alt="Photo de l'équipe TechWorld">
             </div>
         </div>
     </section>
 
     <!-- Section Témoignages -->
-    <section id="temoignages" class="py-5 bg-light">
+    <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4">Ce que disent nos clients</h2>
-            <div id="carouselTemoignages" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-
-                <div class="carousel-item active text-center">
-                    <img src="beni.jpg" class="rounded-circle mb-3" width="100" alt="Client 1">
-                    <h5>Béni IBOMBO</h5>
-                    <p class="mx-auto" style="max-width: 600px;">TechnoSphere a réparé mon PC en un temps record. Service impeccable, je recommande !</p>
+        <h2 class="text-center mb-5">Ce que disent nos clients</h2>
+    
+        <div id="carouselTemoignages" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+    
+            <!-- Témoignage 1 -->
+            <div class="carousel-item active">
+                <div class="d-flex flex-column align-items-center">
+                <img src="diallo.jpg" class="rounded-circle mb-4" alt="Client 1" style="width: 120px; height: 120px; object-fit: cover;">
+                <p class="text-center lead px-3">"Super service rapide et équipe au top ! Je recommande TechnoSphere les yeux fermés."</p>
+                <h5 class="mt-3">ABDOURHAMANE Diallo</h5>
                 </div>
-
-                <div class="carousel-item text-center">
-                    <img src="diallo.jpg" class="rounded-circle mb-3" width="100" alt="Client 2">
-                    <h5>ABDOURHAME Diallo</h5>
-                    <p class="mx-auto" style="max-width: 600px;">Excellent service client, produits de qualité et bon prix. Je recommande vivement !</p>
-                </div>
-
-                <div class="carousel-item text-center">
-                    <img src="emmanuel.jpg" class="rounded-circle mb-3" width="100" alt="Client 3">
-                    <h5>Emmanuel TSINGAMBIA</h5>
-                    <p class="mx-auto" style="max-width: 600px;">Très satisfait des services informatiques proposés. À l’écoute et professionnels.</p>
-                </div>
-
-                <div class="carousel-item text-center">
-                    <img src="japhet.jpg" class="rounded-circle mb-3" width="100" alt="Client 3">
-                    <h5>Japhet BONDOUMBOU</h5>
-                    <p class="mx-auto" style="max-width: 600px;">Très satisfait des services informatiques proposés. À l’écoute et professionnels.</p>
-                </div>
-
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTemoignages" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselTemoignages" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                </button>
             </div>
+    
+            <!-- Témoignage 2 -->
+            <div class="carousel-item">
+                <div class="d-flex flex-column align-items-center">
+                <img src="beni.jpg" class="rounded-circle mb-4" alt="Client 2" style="width: 120px; height: 120px; object-fit: cover;">
+                <p class="text-center lead px-3">"Ils ont réparé mon PC en 24h et m'ont même donné des conseils gratuits ! Merci TechnoSphere."</p>
+                <h5 class="mt-3">Béni IBOMBO</h5>
+                </div>
+            </div>
+    
+            <!-- Témoignage 3 -->
+            <div class="carousel-item">
+                <div class="d-flex flex-column align-items-center">
+                <img src="emmanuel.jpg" class="rounded-circle mb-4" alt="Client 3" style="width: 120px; height: 120px; object-fit: cover;">
+                <p class="text-center lead px-3">"Large choix de produits tech à des prix imbattables. Un vrai plaisir d'acheter chez eux."</p>
+                <h5 class="mt-3">Emmanuel TSHIGAMBIA</h5>
+                </div>
+            </div>
+
+            <!-- Témoignage 4 -->
+            <div class="carousel-item">
+                <div class="d-flex flex-column align-items-center">
+                <img src="japhet.jpg" class="rounded-circle mb-4" alt="Client 3" style="width: 120px; height: 120px; object-fit: cover;">
+                <p class="text-center lead px-3">"Un service incroyable, cette entreprise est recommandable. Je vous le conseille !"</p>
+                <h5 class="mt-3">Japhet BONDOUMBOU</h5>
+                </div>
+            </div>
+    
+            </div>
+    
+            <!-- Contrôles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTemoignages" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTemoignages" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-        <div class="row text-center text-md-start">
-            <div class="col-md-3 mb-4">
-            <h1>Techno<span>Sphere</span></h1>
-            </div>
-            <div class="col-md-3 mb-4">
-            <h3>Liens</h3>
-            <ul class="list-unstyled">
-                <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
-                <li><a href="service.html" class="text-white text-decoration-none">Services</a></li>
-                <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
-                <li><a href="propos.html" class="text-white text-decoration-none">À Propos</a></li>
-            </ul>
-            </div>
-            <div class="col-md-3 mb-4">
-            <h3>Documents</h3>
-            <ul class="list-unstyled">
-                <li><a href="" class="text-white text-decoration-none">FAQ</a></li>
-                <li><a href="" class="text-white text-decoration-none">Confidentialité</a></li>
-                <li><a href="" class="text-white text-decoration-none">Termes & Conditions</a></li>
-                <li><a href="" class="text-white text-decoration-none">Nos Informations</a></li>
-            </ul>
-            </div>
-            <div class="col-md-3 mb-4">
-            <h3>Suivez-Nous</h3>
-            <a href="facebook.com"><img src="facebook.png" alt="Facebook" width="30"></a>
-            <a href="instagram.com"><img src="instagram.png" alt="Instagram" width="30"></a>
-            <a href="tiktok.com"><img src="tic-tac.png" alt="TikTok" width="30"></a>
-            <a href="whatsapp.com"><img src="whatsapp.png" alt="WhatsApp" width="30"></a>
+    <footer>
+        <div class="footer-title">
+            <h1>TechnoSphere</h1>
+        </div>
+
+        <div class="footer-icons">
+            <h2>Suivez Nous</h2>
+            <div class="icons">
+                <a href="www.whatsapp.com"><img src="whatsapp.png" alt="whatsapp"></a>
+                <a href="www.facebook.com"><img src="facebook.png" alt="facebook"></a>
+                <a href="www.instagram.com"><img src="instagram.png" alt="instagram"></a>
+                <a href="www.titok.com"><img src="tic-tac.png" alt="tiktok"></a>
             </div>
         </div>
+        <div class="footer-bottom">
+            <p>&copy;2025 TechnoSphere|Tous droits réservés.</p>
         </div>
     </footer>
-</main>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let text = document.getElementById("intro-text");
+
+            // Ajouter une classe après 500ms pour déclencher l'animation
+            setTimeout(() => {
+                text.style.left = "0";
+                text.style.opacity = "1";
+            }, 500);
+        });
+    </script>
 </body>
 </html>

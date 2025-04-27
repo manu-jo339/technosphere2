@@ -3,7 +3,6 @@
     "development"
   ],
   "hints": {
-    "disown-opener": "off",
     "no-inline-styles": "off",
     "axe/name-role-value": [
       "default",
